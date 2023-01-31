@@ -2,8 +2,8 @@
 {
     public class Navire
     {
-        protected int x;
-        protected int y;
+        protected int x { get; set; }
+        protected int y { get; set; }
         protected int flag;
         protected bool IsDestroy;
 
@@ -16,6 +16,10 @@
             Console.WriteLine("Camp du navire?");
             this.flag = int.Parse(Console.ReadLine());
             IsDestroy = false;
+        }
+        public double Distance(int x1, int y1, int x2, int y2)
+        {
+            return Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2));
         }
     }
 }
