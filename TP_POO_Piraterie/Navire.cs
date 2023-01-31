@@ -1,6 +1,6 @@
 ﻿namespace TP_POO_Piraterie
 {
-    internal class Navire
+    public class Navire
     {
         protected int x;
         protected int y;
